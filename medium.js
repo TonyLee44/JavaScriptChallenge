@@ -10,7 +10,7 @@ if (isLowerCase(str) === true) {
 }
 
 if (isUpperCase(str) === false && isLowerCase(str) === false) {
-    console.log("The user is neither shouting or whispering.");
+    console.log("The user is talking normally.");
 }
 
 function isUpperCase(str) {
