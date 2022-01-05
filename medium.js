@@ -1,10 +1,22 @@
 //medium Javascript Challenge
 var str = window.prompt("Enter a phrase here: ");
-var isTrue = true;
+
+if (isUpperCase(str) === true) {
+    console.log("The user is shouting.");
+}
+
+if (isLowerCase(str) === true) {
+    console.log("The user is whispering.");
+}
+
+if (isUpperCase(str) === false && isLowerCase(str) === false) {
+    console.log("The user is neither shouting or whispering.");
+}
 
 function isUpperCase(str) {
-    return str === str.toUpperCase();
+    return /[A-Z]/.test(str) && !/[a-z]/.test(str);
 }
-if (str === str.toUpperCase) {
-    alert("You are yelling!");
+
+function isLowerCase(str) {
+    return /[a-z]/.test(str) && !/[A-Z]/.test(str);
 }
