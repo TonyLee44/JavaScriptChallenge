@@ -1,23 +1,28 @@
-var a = parseInt(window.prompt("Enter first number here: "));
-var b = parseInt(window.prompt("Enter second number here: "));
+var x = parseInt(window.prompt("Enter first number here: "));
+var y = parseInt(window.prompt("Enter second number here: "));
+function sum(x,y) {
+    return (x+y);
+};
 
-console.log("The sum of " + a + " and " + b + " is: " + sum(a,b));
-console.log("The difference of " + a + " and " + b + " is: " + diff(a,b));
-console.log("The multiplication of " + a + " and " + b + " is: " + multiply(a,b));
-console.log("The division of " + a + " and " + b + " is: " + divide(a,b));
+function diff(x,y) {
+    return (x-y);
+};
 
-function sum(a,b) {
-    return (a+b);
-}
+function multiply(x,y) {
+    return (x*y);
+};
 
-function diff(a,b) {
-    return (a-b);
-}
+function divide(x, y) {
+    return (x/y);
+};
 
-function multiply(a,b) {
-    return (a*b);
-}
-
-function divide(a,b) {
-    return (a/b);
-}
+switch(window.prompt("Select one of the four options and hit enter (+ - * /): ")) {
+    case '+': console.log("The sum of " + x + " and " + y + " is: " + sum(x,y));
+    break;
+    case '-': console.log("The difference of " + x + " and " + y + " is: " + diff(x,y));
+    break;
+    case '*': console.log("The multiplication of " + x + " and " + y + " is: " + multiply(x,y));
+    break;
+    case '/': console.log("The division of " + x + " and " + y + " is: " + divide(x,y));
+    default: console.log('You did not choose a vailid option!');
+};
