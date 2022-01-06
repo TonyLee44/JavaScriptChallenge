@@ -1,4 +1,5 @@
 var x = parseInt(window.prompt("Enter first number here: "));
+let str = window.prompt("Select one of the four options and hit enter (+ - * /): ");
 var y = parseInt(window.prompt("Enter second number here: "));
 
 function sum(x,y) {
@@ -17,7 +18,6 @@ function divide(x, y) {
     return (x/y);
 };
 
-let str = window.prompt("Select one of the four options and hit enter (+ - * /): ");
 switch(str) {
     case '+': console.log("The sum of " + x + " and " + y + " is: " + sum(x,y));
     break;
