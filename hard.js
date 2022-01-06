@@ -7,16 +7,16 @@ console.log("The division of 20 and 10 is: " + divide());
 
 function sum() {
     return a + b;
-}
+};
 
 function diff() {
     return a - b;
-}
+};
 
 function multiply() {
     return a * b;
-}
+};
 
 function divide() {
     return a / b;
-}
+};
